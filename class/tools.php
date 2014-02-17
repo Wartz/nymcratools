@@ -49,6 +49,7 @@ class Tools {
 	}
 
 	function content() {
-		$this->menu();
+		echo "CONTENT!!!11<br>";
+		echo "Will be MVCing this soon I hope";
 	}
 }

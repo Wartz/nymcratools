@@ -55,12 +55,10 @@
             <a class="pure-menu-heading" href="#">NYMCRA Tools</a>
 
             <ul>
-            	<li> <!-- class="menu-item-divided pure-menu-selected" -->
-                    <a href="#">Post News</a>
-                </li>
-                <li><a href="members.php">Members</a></li>
-                <li><a href="#">Race Results</a></li>
-                <li><a href="#">Points Series</a></li>
+                <?php 
+                    $content = new Tools;
+                    $content->menu();
+                 ?>
             </ul>
         </div>
     </div>
@@ -72,7 +70,11 @@
         </div>
 
         <div class="content">
-            <p>content</p>
+            <p>
+                <?php
+                    $content->content();
+                ?>
+            </p>
         </div>
     </div>
 </div>

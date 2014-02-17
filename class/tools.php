@@ -14,13 +14,15 @@ class Tools {
 		$con->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 		$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		//query
+		//// add boatcloss to query when implemented
 		$sql = "SELECT firstname, lastname, boatnumber/*, boatclass,*/ FROM users ORDER BY boatnumber";
 		$stmt = $con->prepare($sql);
 		$stmt->execute();
 
 		//display data
 		while ($row = $stmt->fetch()){
-			echo "<tr><td>". $row['boatnumber'] . "</td><td>" . $row['firstname'] . " " . $row['lastname'] . "</td></tr>";
+		//// add boatcloss to echo when implemented
+			echo "<tr><td>". $row['boatnumber'] . "</td><td>" /* . $row['boatclass'] . "</td><td>"*/ . $row['firstname'] . " " . $row['lastname'] . "</td></tr>";
 		}
 	}
 

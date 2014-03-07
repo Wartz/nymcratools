@@ -52,5 +52,7 @@ class Tools {
 		echo "CONTENT!!!11<br>";
 		echo "Will be MVCing this soon I hope";
         echo "maybe today?";
+        echo "maybe not today?";
+        echo "hell!!!";
 	}
 }
